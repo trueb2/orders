@@ -10,4 +10,9 @@ public class Worker extends Unique {
     public String getName() {
         return name;
     }
+
+    public void complete(Order order) {
+        System.out.printf("Worker %d :: ", getId());
+        order.printData();
+    }
 }
